@@ -1,0 +1,618 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:"poppins",sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    color: white;
+    background-image: url(background.png);
+}
+
+#header{
+    width:100%;
+    height:100vh;
+}
+
+.container{
+    padding: 5px 5%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: 300px;
+}
+
+nav .logo{
+    height: 50px;
+    width: 50px;
+}
+
+nav p{
+    margin-left: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+}
+
+nav ul{
+    margin-left:50px;
+}
+
+nav ul li{
+    display:inline-block;
+    list-style: none;
+    margin:10px 10px;
+    background: rgba(255,255,255,.1);
+    backdrop-filter: blur(100px);
+    border: 2px solid rgba(255,255,255,.2);
+    padding: 5px;
+    border-radius: 12px;
+
+
+}
+
+nav ul li a{
+    color:black;
+    text-decoration: none;
+    font-size: 18px;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 600;
+    position: relative;
+} 
+
+nav ul li a::after{
+    content:'';
+    width:0;
+    height: 3px;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom:-6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width:100%;
+}
+.header-text{
+    margin-top:17%;
+    font-size:30px;
+
+}
+
+@keyframes motion{
+    0%{left:0px; top:0px;}
+    100%{left:1000px; top:0px;}
+}
+
+.header-text h1{
+    position:relative;
+    font-size:60px;
+    margin-top:15px;
+    margin-left:-820px;
+    font-family:'Michroma', sans-serif;
+    animation-name:motion ;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+.header-text p{
+    font-family: 'Comfortaa', sans-serif;
+    margin-left: 185px;
+}
+
+.header-text h1 span{
+    color:black;
+    font-family:'Michroma', sans-serif;
+}
+
+ /* about*/
+
+#about{
+    padding:50px;
+    color:white;
+    
+}
+
+.row{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis:35%;
+    border-radius:15px;
+}
+
+.about-col-2{
+    flex-basis: 60%;
+    
+    
+ }
+
+ .img1{
+    height:50vh;
+    width:50vh;
+    align-content: center;
+    border: solid white;
+    border-radius: 30vh;
+    transition:transform 0.5s;
+
+ }
+
+ @keyframes motion1{
+    0%{left:0px; top:0px;}
+    100%{left:800px; top:0px;}
+}
+
+.img1{
+    position:relative;
+    font-size:60px;
+    margin-top:15px;
+    margin-left:-820px;
+    font-family:'Michroma', sans-serif;
+    animation-name:motion1 ;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+ .img1:hover{
+    transform: translateY(5px);
+    height: 52vh;
+    width: 52vh;
+
+ }
+
+.sub-title{
+    font-size:40px;
+    font-weight:600;
+    color:black;
+    font-family:'Montserrat', sans-serif;
+}
+
+.about-text{
+    display:flex;
+    flex-wrap: wrap;
+    font-size:20px;
+    font-family:'Kanit', sans-serif;
+    animation-name: motion2;
+    align-items: justify;
+    width:100%;
+}
+
+@keyframes motion2{
+    0%{left:100px; top:0px;}
+    100%{left:0px; top:0px;}
+}
+
+.about-text{
+    position:relative;
+    margin-right:-1020px;
+    font-family:'Michroma', sans-serif;
+    animation-name:motion2 ;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+.tab-titles{
+    display: flex;
+    font-size: 30px;
+    font-weight: 600;
+    color:black;
+    font-family:'Montserrat', sans-serif;
+    
+}
+.tab-titles p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+.tab-titles ul li{
+    list-style: none;
+    text-decoration: none;
+}
+
+.tab-content{
+    display:grid;
+    grid-template-columns: 200px 200px auto;
+    column-gap: 0px;
+    margin-top: 10px;
+    width:100%;
+    
+}
+
+.tab-content1{
+    display:grid;
+    grid-template-columns: 100px 100px auto;
+    column-gap: 0px;
+    width:100%;
+    
+}
+
+#skills{
+    margin-top: 50px;
+}
+
+.tab-content img{
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.tab-content img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 20px 20px 2px rgba(0, 0, 0, 0.25);
+}
+
+
+.tab-content img{
+    border:solid white 2px;
+}
+
+.tab-content1 .imgl{
+    height: 50px;
+    width:50px;
+    right:-1000px;
+}
+
+.imgl{
+    position:relative;
+    margin-right:-1020px;
+    animation-name:motion2 ;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+
+.tab-content img{
+    height: 150px;
+    width: 180px;
+    border-radius: 12px;
+    right:-1000px;
+}
+
+.img2{
+    position:relative;
+    margin-right:-1020px;
+    animation-name:motion2 ;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+.img3{
+    position:relative;
+    margin-right:-1020px;
+    animation-name:motion2 ;
+    animation-duration: 4s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+.tab-content a{
+    text-decoration: none;
+    color:white;
+}
+
+.subtitle{
+    font-family:'Montserrat', sans-serif;
+}
+
+.contact{
+    margin-left:350px;
+    margin-top: 140px;
+}
+
+
+.contact p{
+    margin-top:30px;
+}
+
+.contact p i{
+    color:white;
+    margin-right:15px;
+    font-size:20px;
+}
+
+.contact p span{
+    font-size: 15px;
+}
+
+.social-icons{
+    margin-top:30px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size:30px;
+    margin-right:15px;
+    color:white;
+    display:inline-block;
+    transition:transform 0.5s;
+}
+.social-icons i{
+    color:white;
+}
+
+.social-icons a:hover{
+    transform: translateY(-5px);
+}
+
+
+/*------------CSS for small screen ------------*/
+
+@media only screen and (max-width:600px){
+
+    body{
+        color: white;
+        background-image: url(bg-image.png);
+    }
+    
+    nav p{
+        font-size: 10px;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    nav .logo{
+        margin-left:10px;
+        height: 30px;
+        width:30px;
+    }
+
+    @keyframes motion{
+        0%{left:0px; top:0px;}
+        100%{left:860px; top:0px;}
+    }
+    
+    .header-text h1{
+        position:relative;
+        font-size:20px;
+        margin-top:15px;
+        margin-left:-820px;
+        font-family:'Michroma', sans-serif;
+        animation-name:motion ;
+        animation-duration: 4s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease;
+    }
+    
+    .header-text p{
+        font-family: 'Comfortaa', sans-serif;
+        margin-left: 43px;
+        font-size: 20px;
+    }
+
+    @keyframes motion1{
+        0%{left:0px; top:0px;}
+        100%{left:800px; top:0px;}
+    }
+    
+    .img1{
+        position:relative;
+        font-size:60px;
+        margin-top:15px;
+        margin-left:-820px;
+        font-family:'Michroma', sans-serif;
+        animation-name:motion1 ;
+        animation-duration: 4s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease;
+    }
+    
+     .img1:hover{
+        transform: translateY(5px);
+        height: 40vh;
+        width: 40vh;
+     }
+
+     .about-text{
+        display:flex;
+        flex-wrap: wrap;
+        font-size:20px;
+        font-family:'Kanit', sans-serif;
+        animation-name: motion2;
+        align-items: justify;
+        width:80%;
+    }
+    
+    @keyframes motion2{
+        0%{left:100px; top:0px;}
+        100%{left:0px; top:0px;}
+    }
+    
+    .about-text{
+        position:relative;
+        margin-right:-1020px;
+        font-family:'Michroma', sans-serif;
+        animation-name:motion2 ;
+        animation-duration: 4s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease;
+    }
+
+    .tab-content{
+        display:grid;
+        grid-template-columns: 85px 85px 30px;
+        column-gap: 10pxpx;
+        margin-top: 10px;
+        width:80%;
+        
+    }
+    
+    .tab-content1{
+        display:grid;
+        grid-template-columns: 100px 100px 50px;
+        column-gap: 0px;
+        width:30%;
+        
+    }
+    
+    #skills{
+        margin-top: 50px;
+    }
+    
+    .tab-content img{
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    }
+    .tab-content img:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 20px 20px 2px rgba(0, 0, 0, 0.25);
+    }
+    
+    
+    .tab-content img{
+        border:solid white 2px;
+    }
+    
+    .tab-content1 .imgl{
+        height: 30px;
+        width:30px;
+        right:-1000px;
+    }
+    
+    .imgl{
+        position:relative;
+        margin-right:-1000px;
+        animation-name:motion2 ;
+        animation-duration: 4s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease;
+    }
+    
+    
+    .tab-content img{
+        height: 50px;
+        width: 80px;
+        border-radius: 12px;
+        
+    }
+    
+    .img2{
+        position:relative;
+        
+        animation-name:motion2 ;
+        animation-duration: 4s;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+    }
+    
+    .img3{
+        position:relative;
+        margin-right:-1020px;
+        animation-name:motion2 ;
+        animation-duration: 4s;
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+    }
+
+    .img1{
+        height:20vh;
+        width:20vh;
+     }
+
+     .img1:hover{
+        transform: translateY(5px);
+        height: 22vh;
+        width: 22vh;
+    
+     }
+     .subtitle{
+        font-size: 25px;
+    }
+
+    .contact p span{
+        font-size: 10px;
+    }
+
+    .about-col-2 pre{
+        font-size: 25px;
+    }
+
+    .about-text{
+        font-size:10px;
+    }
+
+    .tab-titles p{
+        font-size: 25px;
+    }
+
+    .tab-content span{
+        font-size: 10px;
+    }
+
+    .contact h1{
+        font-size: 20px;
+    }
+
+    .contact span{
+        font-size: 5px;
+        margin: 0px;
+        padding: 0 0 0;
+    }
+    
+    .social-icons i{
+        font-size: 15px;
+    }
+
+    .contact{
+        margin-left:20px;
+        margin-top: 10px;
+    }
+    
+    
+    .contact p{
+        margin-top:30px;
+        font-size: 15px;
+    }
+    
+    .contact p i{
+        margin: 2px;
+        display:inline;
+        color:white;
+        font-size:15px;
+    }
+    
+    .contact p span{
+        font-size: 15px;
+    }
+    
+    .social-icons{
+        margin-top:30px;
+    }
+    
+    .social-icons a{
+        text-decoration: none;
+        font-size:30px;
+        margin-right:15px;
+        color:white;
+        display:inline-block;
+        transition:transform 0.5s;
+    }
+    .social-icons i{
+        color:white;
+    }
+    
+    .social-icons a:hover{
+        transform: translateY(-5px);
+    }
+}
+
+
+
