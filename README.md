@@ -11,6 +11,13 @@ CSS: Enhances the website's visual appeal, layout, and responsiveness across var
 
 JavaScript: Introduces interactivity to the website, potentially including features like animations, form validation, or dynamic content updates.
 
+
+# Screenshots:
+
+![Screenshot](https://github.com/piyushkumar-prog/Bharat_intern-Task-1-Portfolio_Website/blob/main/Screenshot.png)
+![Screenshot](https://github.com/piyushkumar-prog/Bharat_intern-Task-1-Portfolio_Website/blob/main/screenshot--1.png)
+![Screenshot](https://github.com/piyushkumar-prog/Bharat_intern-Task-1-Portfolio_Website/blob/main/screenshot--2.png)
+
 # Contributing:
 
 We encourage contributions to this project! Feel free to fork the repository, make your enhancements, and submit a pull request for review and potential merging.
